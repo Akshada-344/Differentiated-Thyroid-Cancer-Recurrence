@@ -5,6 +5,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report
 
+# === Main App Configuration (MUST BE FIRST) ===
+st.set_page_config(
+    page_title="AI Thyroid Cancer Predictor", 
+    layout="wide",
+    page_icon="🧬"
+)
+
 # === Custom CSS for attractive styling ===
 st.markdown("""
 <style>
@@ -147,11 +154,6 @@ def train_model(df):
         return None, 0, {}, [], None
 
 # === Main App ===
-st.set_page_config(
-    page_title="AI Thyroid Cancer Predictor", 
-    layout="wide",
-    page_icon="🧬"
-)
 
 # Header
 st.markdown("""

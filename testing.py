@@ -1,5 +1,3 @@
-# Fix for dataset loading in Streamlit app
-
 import streamlit as st
 import pandas as pd
 import os
